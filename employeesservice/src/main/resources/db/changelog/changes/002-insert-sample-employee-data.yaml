@@ -1,0 +1,424 @@
+databaseChangeLog:
+  - changeSet:
+      id: 002-insert-sample-employee-data
+      author: gjorgievskivlatko
+      changes:
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "John Smith" }
+              - column: { name: email, value: "john.smith@techcorp.com" }
+              - column: { name: phone, value: "+1-555-0101" }
+              - column: { name: address, value: "123 Main St, New York, NY 10001" }
+              - column: { name: company, value: "TechCorp Inc" }
+              - column: { name: date, value: "2023-01-15" }
+              - column: { name: category, value: "Software Engineer" }
+              - column: { name: comment, value: "Senior software engineer with 8 years of experience" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Sarah Johnson" }
+              - column: { name: email, value: "sarah.johnson@innovate.com" }
+              - column: { name: phone, value: "+1-555-0102" }
+              - column: { name: address, value: "456 Oak Ave, San Francisco, CA 94102" }
+              - column: { name: company, value: "Innovate Solutions" }
+              - column: { name: date, value: "2022-05-20" }
+              - column: { name: category, value: "Human Resources" }
+              - column: { name: comment, value: "Marketing manager specializing in digital campaigns" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Michael Chen" }
+              - column: { name: email, value: "michael.chen@datatech.com" }
+              - column: { name: phone, value: "+1-555-0103" }
+              - column: { name: address, value: "789 Pine St, Seattle, WA 98101" }
+              - column: { name: company, value: "DataTech Analytics" }
+              - column: { name: date, value: "2021-09-10" }
+              - column: { name: category, value: "Software Engineer" }
+              - column: { name: comment, value: "Data scientist with expertise in machine learning" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Emily Rodriguez" }
+              - column: { name: email, value: "emily.rodriguez@cloudnet.com" }
+              - column: { name: phone, value: "+1-555-0104" }
+              - column: { name: address, value: "321 Elm St, Austin, TX 78701" }
+              - column: { name: company, value: "CloudNet Systems" }
+              - column: { name: date, value: "2023-03-12" }
+              - column: { name: category, value: "Software Engineer" }
+              - column: { name: comment, value: "DevOps engineer focused on cloud infrastructure" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "David Brown" }
+              - column: { name: email, value: "david.brown@financeplus.com" }
+              - column: { name: phone, value: "+1-555-0105" }
+              - column: { name: address, value: "654 Maple Dr, Boston, MA 02101" }
+              - column: { name: company, value: "FinancePlus Corp" }
+              - column: { name: date, value: "2020-11-05" }
+              - column: { name: category, value: "Human Resources" }
+              - column: { name: comment, value: "Financial analyst with CPA certification" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Jessica Williams" }
+              - column: { name: email, value: "jessica.williams@healthsys.com" }
+              - column: { name: phone, value: "+1-555-0106" }
+              - column: { name: address, value: "987 Cedar Ln, Chicago, IL 60601" }
+              - column: { name: company, value: "HealthSys Solutions" }
+              - column: { name: date, value: "2022-07-18" }
+              - column: { name: category, value: "Software Engineer" }
+              - column: { name: comment, value: "Healthcare IT specialist managing patient systems" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "James Anderson" }
+              - column: { name: email, value: "james.anderson@retailpro.com" }
+              - column: { name: phone, value: "+1-555-0107" }
+              - column: { name: address, value: "147 Birch Rd, Denver, CO 80201" }
+              - column: { name: company, value: "RetailPro Inc" }
+              - column: { name: date, value: "2023-02-28" }
+              - column: { name: category, value: "Human Resources" }
+              - column: { name: comment, value: "Senior sales representative with regional coverage" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Maria Garcia" }
+              - column: { name: email, value: "maria.garcia@edutech.com" }
+              - column: { name: phone, value: "+1-555-0108" }
+              - column: { name: address, value: "258 Spruce St, Miami, FL 33101" }
+              - column: { name: company, value: "EduTech Learning" }
+              - column: { name: date, value: "2021-04-22" }
+              - column: { name: category, value: "Human Resources" }
+              - column: { name: comment, value: "Education technology coordinator and trainer" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Robert Taylor" }
+              - column: { name: email, value: "robert.taylor@logisticshub.com" }
+              - column: { name: phone, value: "+1-555-0109" }
+              - column: { name: address, value: "369 Willow Ave, Portland, OR 97201" }
+              - column: { name: company, value: "LogisticsHub Ltd" }
+              - column: { name: date, value: "2022-12-01" }
+              - column: { name: category, value: "DevOps" }
+              - column: { name: comment, value: "Supply chain operations manager" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Linda Martinez" }
+              - column: { name: email, value: "linda.martinez@greenergy.com" }
+              - column: { name: phone, value: "+1-555-0110" }
+              - column: { name: address, value: "741 Aspen Ct, Phoenix, AZ 85001" }
+              - column: { name: company, value: "GreenErgy Solutions" }
+              - column: { name: date, value: "2023-06-15" }
+              - column: { name: category, value: "Software Engineer" }
+              - column: { name: comment, value: "Renewable energy systems engineer" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Christopher Lee" }
+              - column: { name: email, value: "christopher.lee@mediapro.com" }
+              - column: { name: phone, value: "+1-555-0111" }
+              - column: { name: address, value: "852 Poplar Blvd, Los Angeles, CA 90001" }
+              - column: { name: company, value: "MediaPro Studios" }
+              - column: { name: date, value: "2021-08-30" }
+              - column: { name: category, value: "Software Engineer" }
+              - column: { name: comment, value: "Creative director for multimedia projects" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Patricia White" }
+              - column: { name: email, value: "patricia.white@legalassist.com" }
+              - column: { name: phone, value: "+1-555-0112" }
+              - column: { name: address, value: "963 Chestnut Way, Philadelphia, PA 19101" }
+              - column: { name: company, value: "LegalAssist Partners" }
+              - column: { name: date, value: "2020-03-14" }
+              - column: { name: category, value: "Human Resources" }
+              - column: { name: comment, value: "Legal counsel specializing in corporate law" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Daniel Harris" }
+              - column: { name: email, value: "daniel.harris@autotech.com" }
+              - column: { name: phone, value: "+1-555-0113" }
+              - column: { name: address, value: "159 Hickory Ln, Detroit, MI 48201" }
+              - column: { name: company, value: "AutoTech Industries" }
+              - column: { name: date, value: "2022-10-08" }
+              - column: { name: category, value: "Software Engineer" }
+              - column: { name: comment, value: "Automotive systems engineer" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Nancy Clark" }
+              - column: { name: email, value: "nancy.clark@fashionhouse.com" }
+              - column: { name: phone, value: "+1-555-0114" }
+              - column: { name: address, value: "357 Magnolia St, Nashville, TN 37201" }
+              - column: { name: company, value: "FashionHouse Inc" }
+              - column: { name: date, value: "2023-01-25" }
+              - column: { name: category, value: "Software Engineer" }
+              - column: { name: comment, value: "Fashion designer and product development lead" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Matthew Robinson" }
+              - column: { name: email, value: "matthew.robinson@constructco.com" }
+              - column: { name: phone, value: "+1-555-0115" }
+              - column: { name: address, value: "486 Dogwood Dr, Atlanta, GA 30301" }
+              - column: { name: company, value: "ConstructCo LLC" }
+              - column: { name: date, value: "2021-06-11" }
+              - column: { name: category, value: "DevOps" }
+              - column: { name: comment, value: "Construction project manager for commercial builds" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Karen Walker" }
+              - column: { name: email, value: "karen.walker@biomedtech.com" }
+              - column: { name: phone, value: "+1-555-0116" }
+              - column: { name: address, value: "624 Sycamore Pl, San Diego, CA 92101" }
+              - column: { name: company, value: "BioMedTech Corp" }
+              - column: { name: date, value: "2022-04-05" }
+              - column: { name: category, value: "Software Engineer" }
+              - column: { name: comment, value: "Biomedical research scientist" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Steven Young" }
+              - column: { name: email, value: "steven.young@sportsgear.com" }
+              - column: { name: phone, value: "+1-555-0117" }
+              - column: { name: address, value: "735 Walnut St, Minneapolis, MN 55401" }
+              - column: { name: company, value: "SportsGear Pro" }
+              - column: { name: date, value: "2023-05-19" }
+              - column: { name: category, value: "Software Engineer" }
+              - column: { name: comment, value: "Product manager for athletic equipment line" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Betty King" }
+              - column: { name: email, value: "betty.king@travelconnect.com" }
+              - column: { name: phone, value: "+1-555-0118" }
+              - column: { name: address, value: "846 Cherry Ave, Las Vegas, NV 89101" }
+              - column: { name: company, value: "TravelConnect Agency" }
+              - column: { name: date, value: "2021-11-27" }
+              - column: { name: category, value: "Human Resources" }
+              - column: { name: comment, value: "Travel coordinator and customer relations specialist" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Kevin Wright" }
+              - column: { name: email, value: "kevin.wright@cybersec.com" }
+              - column: { name: phone, value: "+1-555-0119" }
+              - column: { name: address, value: "957 Pecan Rd, Dallas, TX 75201" }
+              - column: { name: company, value: "CyberSec Solutions" }
+              - column: { name: date, value: "2022-09-14" }
+              - column: { name: category, value: "DevOps" }
+              - column: { name: comment, value: "Cybersecurity analyst and penetration tester" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Lisa Lopez" }
+              - column: { name: email, value: "lisa.lopez@foodchain.com" }
+              - column: { name: phone, value: "+1-555-0120" }
+              - column: { name: address, value: "168 Beech St, Houston, TX 77001" }
+              - column: { name: company, value: "FoodChain Distributors" }
+              - column: { name: date, value: "2023-07-03" }
+              - column: { name: category, value: "Software Engineer" }
+              - column: { name: comment, value: "Quality assurance manager for food safety" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Brian Hill" }
+              - column: { name: email, value: "brian.hill@insurepro.com" }
+              - column: { name: phone, value: "+1-555-0121" }
+              - column: { name: address, value: "279 Redwood Cir, Columbus, OH 43201" }
+              - column: { name: company, value: "InsurePro Services" }
+              - column: { name: date, value: "2020-12-16" }
+              - column: { name: category, value: "Human Resources" }
+              - column: { name: comment, value: "Insurance underwriter for commercial policies" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Sandra Scott" }
+              - column: { name: email, value: "sandra.scott@pharmcare.com" }
+              - column: { name: phone, value: "+1-555-0122" }
+              - column: { name: address, value: "391 Laurel Dr, Baltimore, MD 21201" }
+              - column: { name: company, value: "PharmCare Inc" }
+              - column: { name: date, value: "2022-02-09" }
+              - column: { name: category, value: "Human Resources" }
+              - column: { name: comment, value: "Pharmaceutical sales representative" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Jason Green" }
+              - column: { name: email, value: "jason.green@webdesignco.com" }
+              - column: { name: phone, value: "+1-555-0123" }
+              - column: { name: address, value: "502 Fir Pl, Charlotte, NC 28201" }
+              - column: { name: company, value: "WebDesignCo" }
+              - column: { name: date, value: "2023-04-07" }
+              - column: { name: category, value: "Software Engineer" }
+              - column: { name: comment, value: "UX/UI designer specializing in web applications" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Donna Adams" }
+              - column: { name: email, value: "donna.adams@bankingsys.com" }
+              - column: { name: phone, value: "+1-555-0124" }
+              - column: { name: address, value: "613 Cypress St, Indianapolis, IN 46201" }
+              - column: { name: company, value: "BankingSys Corp" }
+              - column: { name: date, value: "2021-10-21" }
+              - column: { name: category, value: "Human Resources" }
+              - column: { name: comment, value: "Banking systems analyst" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Ryan Baker" }
+              - column: { name: email, value: "ryan.baker@realestatemax.com" }
+              - column: { name: phone, value: "+1-555-0125" }
+              - column: { name: address, value: "724 Juniper Way, Jacksonville, FL 32201" }
+              - column: { name: company, value: "RealEstateMax LLC" }
+              - column: { name: date, value: "2022-08-13" }
+              - column: { name: category, value: "Human Resources" }
+              - column: { name: comment, value: "Commercial real estate broker" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Michelle Nelson" }
+              - column: { name: email, value: "michelle.nelson@eventplanner.com" }
+              - column: { name: phone, value: "+1-555-0126" }
+              - column: { name: address, value: "835 Sequoia Blvd, San Antonio, TX 78201" }
+              - column: { name: company, value: "EventPlanner Pro" }
+              - column: { name: date, value: "2023-09-26" }
+              - column: { name: category, value: "Human Resources" }
+              - column: { name: comment, value: "Corporate event planner and coordinator" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Gary Carter" }
+              - column: { name: email, value: "gary.carter@manufact.com" }
+              - column: { name: phone, value: "+1-555-0127" }
+              - column: { name: address, value: "946 Acacia Ln, Milwaukee, WI 53201" }
+              - column: { name: company, value: "Manufact Industries" }
+              - column: { name: date, value: "2020-07-29" }
+              - column: { name: category, value: "DevOps" }
+              - column: { name: comment, value: "Manufacturing operations supervisor" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Carol Mitchell" }
+              - column: { name: email, value: "carol.mitchell@hrpros.com" }
+              - column: { name: phone, value: "+1-555-0128" }
+              - column: { name: address, value: "157 Palm Ave, Memphis, TN 38101" }
+              - column: { name: company, value: "HR Professionals Inc" }
+              - column: { name: date, value: "2021-12-04" }
+              - column: { name: category, value: "Human Resources" }
+              - column: { name: comment, value: "HR manager specializing in talent acquisition" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Eric Perez" }
+              - column: { name: email, value: "eric.perez@aitech.com" }
+              - column: { name: phone, value: "+1-555-0129" }
+              - column: { name: address, value: "268 Olive St, Raleigh, NC 27601" }
+              - column: { name: company, value: "AI Technology Labs" }
+              - column: { name: date, value: "2022-11-18" }
+              - column: { name: category, value: "Software Engineer" }
+              - column: { name: comment, value: "AI/ML engineer working on computer vision projects" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Deborah Roberts" }
+              - column: { name: email, value: "deborah.roberts@nonprofit.org" }
+              - column: { name: phone, value: "+1-555-0130" }
+              - column: { name: address, value: "379 Maple Ln, Louisville, KY 40201" }
+              - column: { name: company, value: "NonProfit Alliance" }
+              - column: { name: date, value: "2023-08-22" }
+              - column: { name: category, value: "Human Resources" }
+              - column: { name: comment, value: "Executive director for charitable organization" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Thomas Turner" }
+              - column: { name: email, value: "thomas.turner@gamestudio.com" }
+              - column: { name: phone, value: "+1-555-0131" }
+              - column: { name: address, value: "481 Ash Ct, Oklahoma City, OK 73101" }
+              - column: { name: company, value: "GameStudio Interactive" }
+              - column: { name: date, value: "2021-05-16" }
+              - column: { name: category, value: "Software Engineer" }
+              - column: { name: comment, value: "Game developer specializing in mobile platforms" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Sharon Phillips" }
+              - column: { name: email, value: "sharon.phillips@vetercare.com" }
+              - column: { name: phone, value: "+1-555-0132" }
+              - column: { name: address, value: "592 Birchwood Dr, Tucson, AZ 85701" }
+              - column: { name: company, value: "VeterCare Clinic" }
+              - column: { name: date, value: "2022-03-31" }
+              - column: { name: category, value: "Human Resources" }
+              - column: { name: comment, value: "Veterinary practice manager" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Kenneth Campbell" }
+              - column: { name: email, value: "kenneth.campbell@consultpro.com" }
+              - column: { name: phone, value: "+1-555-0133" }
+              - column: { name: address, value: "603 Cottonwood Rd, Fresno, CA 93701" }
+              - column: { name: company, value: "ConsultPro Partners" }
+              - column: { name: date, value: "2023-10-11" }
+              - column: { name: category, value: "Human Resources" }
+              - column: { name: comment, value: "Management consultant for business transformation" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Dorothy Parker" }
+              - column: { name: email, value: "dorothy.parker@archdesign.com" }
+              - column: { name: phone, value: "+1-555-0134" }
+              - column: { name: address, value: "714 Willow Creek Blvd, Sacramento, CA 95814" }
+              - column: { name: company, value: "ArchDesign Studio" }
+              - column: { name: date, value: "2020-09-07" }
+              - column: { name: category, value: "DevOps" }
+              - column: { name: comment, value: "Licensed architect specializing in sustainable design" }
+
+        - insert:
+            tableName: employees
+            columns:
+              - column: { name: name, value: "Ronald Evans" }
+              - column: { name: email, value: "ronald.evans@techsupport.com" }
+              - column: { name: phone, value: "+1-555-0135" }
+              - column: { name: address, value: "825 Pine Ridge Ave, Kansas City, MO 64101" }
+              - column: { name: company, value: "TechSupport Services" }
+              - column: { name: date, value: "2021-07-24" }
+              - column: { name: category, value: "DevOps" }
+              - column: { name: comment, value: "IT support specialist and system administrator" }
