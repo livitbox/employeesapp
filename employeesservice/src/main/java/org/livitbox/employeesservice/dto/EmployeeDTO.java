@@ -1,17 +1,36 @@
 package org.livitbox.employeesservice.dto;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
 import java.time.LocalDate;
 
 public class EmployeeDTO {
 
     private Long id;
+
+    @NotBlank
     private String name;
+
+    @NotBlank
     private String email;
+
+    @NotBlank
     private String phone;
+
+    @NotBlank
     private String address;
+
+    @NotBlank
     private String company;
+
+    @NotNull
     private LocalDate date;
+
+    @NotBlank
     private String category;
+
+    @NotBlank
     private String comment;
 
     public EmployeeDTO() {

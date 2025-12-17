@@ -8,6 +8,7 @@ import { employeeService } from '@/services/employeeService'
 import type { EmployeeDto } from '@/data/employeeDto'
 import type { PageResponse } from '@/services/pageResponse'
 import { DateService } from '@/services/dateService.ts'
+import type { PageState } from 'primevue'
 
 const router = useRouter()
 
@@ -33,7 +34,7 @@ const loadEmployees = async () => {
   }
 }
 
-const onPage = (event: any) => {
+const onPage = (event: PageState) => {
   page.value = event.page
   rows.value = event.rows
   loadEmployees()
@@ -80,7 +81,6 @@ onMounted(() => {
       <Column field="email" header="Email" />
       <Column field="phone" header="Phone" :bodyStyle="{ whiteSpace: 'nowrap' }" />
       <Column field="address" header="Address" />
-      <Column field="company" header="Company" />
       <Column field="company" header="Company" />
       <Column field="date" header="Date" :bodyStyle="{ whiteSpace: 'nowrap' }">
         <template #body="{ data }">
